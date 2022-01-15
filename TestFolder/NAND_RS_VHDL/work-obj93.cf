@@ -1,0 +1,7 @@
+v 4
+file . "nand_rs_tb.vhdl" "50744875fdcb6f74cb4b742f97438cb2772cb252" "20220114164052.917":
+  entity nand_rs_tb at 2( 12) + 0 on 13;
+  architecture tb of nand_rs_tb at 10( 114) + 0 on 14;
+file . "nand_rs.vhdl" "0985b4bb5d283878e76a537865993122b5b40537" "20220114164044.324":
+  entity nand_rs at 2( 12) + 0 on 11;
+  architecture v1 of nand_rs at 14( 190) + 0 on 12;

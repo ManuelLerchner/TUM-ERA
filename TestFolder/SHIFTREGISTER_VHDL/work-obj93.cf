@@ -1,0 +1,7 @@
+v 4
+file . "SHIFTREGISTER.vhdl" "f1112604dfae90bba6053ec4241902ddf59e9ec8" "20220115201117.000":
+  entity shiftregister at 1( 0) + 0 on 13;
+  architecture arch of shiftregister at 11( 175) + 0 on 14;
+file . "SHIFTREGISTER_tb.vhdl" "b1deee80c55a103e4793d14808bc58618bc7fd4f" "20220115201111.195":
+  entity shiftregister_tb at 1( 0) + 0 on 11;
+  architecture arch of shiftregister_tb at 7( 94) + 0 on 12;

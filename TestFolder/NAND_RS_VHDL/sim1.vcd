@@ -1,0 +1,116 @@
+$date
+  Fri Jan 14 17:42:26 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module nand_rs_tb $end
+$var reg 1 ! rn_tb $end
+$var reg 1 " sn_tb $end
+$var reg 1 # qn_tb $end
+$var reg 1 $ q_tb $end
+$scope module tb $end
+$var reg 1 % rn $end
+$var reg 1 & sn $end
+$var reg 1 ' qn $end
+$var reg 1 ( q $end
+$var reg 1 ) qn_internal $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+1"
+U#
+U$
+1%
+1&
+U'
+U(
+U)
+#1000000
+0!
+1#
+0$
+0%
+1'
+0(
+1)
+#2000000
+1!
+1%
+#3000000
+0"
+0#
+1$
+0&
+0'
+1(
+0)
+#4000000
+1"
+1&
+#5000000
+0"
+0&
+#6000000
+1"
+1&
+#7000000
+0!
+1#
+0$
+0%
+1'
+0(
+1)
+#9000000
+1!
+1%
+#10000000
+0!
+0%
+#11000000
+1!
+1%
+#12000000
+0"
+0#
+1$
+0&
+0'
+1(
+0)
+#13000000
+1"
+1&
+#14000000
+0"
+0&
+#15000000
+1"
+1&
+#16000000
+0!
+1#
+0$
+0%
+1'
+0(
+1)
+#18000000
+1!
+1%
+#19000000
+0!
+0%
+#20000000
+1!
+1%

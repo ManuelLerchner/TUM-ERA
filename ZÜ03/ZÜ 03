@@ -1,0 +1,71 @@
+%include "io.inc"
+
+
+section .data
+bitmuster:
+    db 0x3f
+    db 0x06
+    db 0x5b  
+    db 0x4f    
+    db 0x66
+    db 0x6d
+    db 0x7d
+    db 0x07
+    db 0x7f
+    db 0x6f
+        
+display:
+    db 0,0
+
+section .text
+global CMAIN
+CMAIN:
+    mov ebp, esp; for correct debugging
+    ;write your code here
+    xor eax, eax
+    
+    
+    mov ax,56
+    
+    call two_digit_to_display
+    
+    PRINT_HEX 1,[display]   
+    PRINT_HEX 1,[display+1]    
+    
+    
+    ret
+    
+    
+two_digit_to_display:
+    push ebx
+    
+    mov bl, 10
+    div bl
+    
+    mov ecx,display
+    call digit_to_display
+    
+    mov al,ah
+    
+    inc ecx   
+    call digit_to_display
+    
+    pop ebx
+    ret
+    
+    
+digit_to_display:
+
+    push edx
+    push eax
+    
+    and eax,0xff
+
+    mov dl,[bitmuster+eax]
+    mov[ecx],dl
+    
+    pop eax
+    pop edx
+    
+    ret
+    

@@ -1,0 +1,16 @@
+%include "io.inc"
+
+section .text
+global CMAIN
+CMAIN:
+    mov ebp, esp; for correct debugging
+    ;write your code here
+    xor eax, eax
+    
+    mov bx,0xffff
+    xor bx,0x8080
+    cmp bh, 250
+    add bl,127
+    ror bh,2
+    
+    ret

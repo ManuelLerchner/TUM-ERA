@@ -1,0 +1,23 @@
+%include "io.inc"
+
+section .text
+global CMAIN
+CMAIN:
+    mov ebp, esp; for correct debugging
+    ;write your code here
+    xor eax, eax
+    
+    xor ecx,ecx
+    xor ebx,ebx
+
+    
+    mov ax,0x5678
+    push dword 0x1234
+    push ax
+    shl ax,8
+    pop ecx
+    or bx,cx
+    shr ecx,16
+    mov al,ch
+    
+    ret
